@@ -1,18 +1,19 @@
 [tool.poetry]
+authors = ["Elijah Wilson <eli@noteable.io>"]
+description = "Reproduce tox-poetry-installer bug"
 name = "tox-poetry-installer-bug-repro"
 version = "0.1.0"
-description = "Reproduce tox-poetry-installer bug"
-authors = ["Elijah Wilson <eli@noteable.io>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 ipypandex = "^0.1.0"
-tox = "^3.21.4"
+nbformat = "^5.1.2"
 pytest = "^6.2.2"
-tox-poetry-installer = {extras = ["poetry"], version = "^0.6.2"}
+tox = "^3.21.4"
+tox-poetry-installer = {extras = ["poetry"], version = "^0.6.3"}
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
